@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.menu-header {
+    margin: 18px 16px;
+    height: 29px;
+    line-height: 100%;
+    font-size: 15px;
+    color: rgb(132, 136, 135);
+}
+
+.button-header {
+    width: 87px;
+    height: 29px;
+    font-size: 16px;
+    line-height: 100%;
+    border-radius: 50px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.button-header:hover {
+    opacity: 0.8;
+    background-color: rgb(76, 3, 145);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+}
+
+.container-left{
+    width: 50%;
+}
+
+.container-right {
+    width: 50%;
+    margin-top: 150px;
+}
+
+h1{
+    font-size: 75px;
+}
+
+h2{
+    font-size: 35px;
+    color: rgb(70, 68, 68);
+}
+
+p{
+    font-size: 20px;
+}
+
+h1, p {
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    color: rgb(37, 37, 37);
+}
+
+
+.button-main{
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    margin: 20px 30px;
+    font-size: 24px;
+    line-height: 100%;
+    border-radius: 50px;
+    border: none;
+    background-color:rgba(173, 255, 0, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.button-main:hover{
+    background-color: rgb(127, 236, 26);
+    opacity: 0.8;
+}
+
+
+@media (max-width:768px) {
+
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .container-left{
+        height: auto;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container-right{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .menu-header{
+        display: none;
+    }
+
+    img{
+        max-width: 80%;
+        margin: 40px auto 0 auto;
+        position: static;
+        display: block;
+    }
+
+    h1{
+        font-size: 35px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        color: rgb(29, 28, 28);
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    h2{
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+
+    P {
+        display: none;
+    }
+
+    .button-main{
+        margin: 20px auto;
+    }
+
+    .button-header{
+        display: none;
+    }
+    
+}
+
